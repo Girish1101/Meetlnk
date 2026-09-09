@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom"
+import { createHashRouter } from "react-router-dom"
 
 import App from "@/App"
 import { ActionItemWorkspacePage } from "@/pages/action-item-workspace-page"
@@ -21,7 +21,7 @@ import CalendarPage from "@/pages/calendar-page"
 import { PipelineTestingPage } from "@/pages/pipeline-testing-page"
 import { UsersPage } from "@/pages/users-page"
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <LandingPage />,
